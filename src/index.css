@@ -79,6 +79,20 @@ h1 {
   animation: pulse 2s infinite ease-in-out;
 }
 
+@keyframes pulse {
+  0% {
+    border-color: #f6e35a;
+    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
+  }
+  50% {
+    border-color: #f8c031;
+    box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
+  }
+  100% {
+    border-color: #f6e35a;
+    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
+  }
+}
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
   color: #f6e35a;
@@ -320,20 +334,7 @@ ol {
   }
 }
 
-@keyframes pulse {
-  0% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
-  }
-  50% {
-    border-color: #f8c031;
-    box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
-  }
-  100% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
-  }
-}
+
 
 /* Fancy animation for showing the "Game Over" element */
 @keyframes pop-in {
