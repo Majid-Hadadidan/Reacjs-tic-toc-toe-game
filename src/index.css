@@ -267,6 +267,16 @@ ol {
   animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   margin: 0.75rem;
 }
+@keyframes slide-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 #log li.highlighted {
   background-color: #3f3b00;
@@ -299,16 +309,6 @@ ol {
   margin-top: 1.5rem;
 }
 
-@keyframes slide-in-from-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-30%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 @keyframes pulse-text {
   0% {
